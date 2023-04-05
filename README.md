@@ -1,6 +1,6 @@
 # Cairo Contracts
 
-A list of smart contracts written in Cairo 1.0 for StarkNet.
+A collection of smart contracts written in Cairo 1.0 (Starknet).
 
 ## Requirements
 
