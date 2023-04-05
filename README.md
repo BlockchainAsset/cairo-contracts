@@ -35,3 +35,7 @@ To run the tests for this contract, you should run `cairo-test --starknet --path
 The above command only works if you have added the PATH. If not, you have to run from the installed Cairo repository:
 
 `cargo run --bin cairo-test -- --starknet --path ./specify/path/to/this/repo`
+
+## Disclaimer
+
+This is for learning, not for production. And as CAIRO is improving each day, some of the code may not work after some time due to those changes.
