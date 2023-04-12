@@ -183,3 +183,5 @@ This is for learning, not for production. And as CAIRO is improving each day, so
 https://github.com/starknet-edu/deploy-cairo1-demo
 
 https://github.com/Kalzak/RockPaperScissors-Cairo
+
+https://github.com/shramee/starklings-cairo1
