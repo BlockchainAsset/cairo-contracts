@@ -2,6 +2,26 @@
 
 A collection of smart contracts written in Cairo 1.0 (Starknet).
 
+## Code, Class Hash & Contracts
+
+### Broadcast
+A simple cairo contract inspired from [`hello_starknet.cairo`](https://github.com/starknet-edu/deploy-cairo1-demo/blob/master/hello_starknet.cairo) to broadcast a message to starknet.
+
+Code: [`broadcast.cairo`](./src/broadcast.cairo)
+
+Class Hash: [`0x45971ddf5228a8977d069efed7752c2a42682ce718b3f491abd363e92dd53ea`](https://goerli.voyager.online/class/0x045971ddf5228a8977d069efed7752c2a42682ce718b3f491abd363e92dd53ea)
+
+Contract: [`0x06c764c0404108a7ad63a24ef6aa3efe0f1e772a50887fe9d01d222efd73bc44`](https://goerli.voyager.online/contract/0x06c764c0404108a7ad63a24ef6aa3efe0f1e772a50887fe9d01d222efd73bc44)
+
+### Splitter
+A simple cairo contract to split input value to equal halfs. If odd number is passed, the caller get's the remainder of `input % 2`.
+
+Code: [`splitter.cairo`](./src/splitter.cairo)
+
+Class Hash: [`0x3dfd8297fdda6915d612488b1dd6ef2abe8b4b30a2c2e208ce77ac68d143221`](https://goerli.voyager.online/class/0x3dfd8297fdda6915d612488b1dd6ef2abe8b4b30a2c2e208ce77ac68d143221)
+
+Contract: [`0x004dd1cb276858514dd823d3a4e3b1d74f7275a630addf79a3a5da0561777097`](https://goerli.voyager.online/contract/0x004dd1cb276858514dd823d3a4e3b1d74f7275a630addf79a3a5da0561777097)
+
 ## Requirements
 
 The contract should be compiled with latest version of CAIRO which can be found [here](https://github.com/starkware-libs/cairo/releases).
@@ -153,18 +173,6 @@ starknet deploy --class_hash <class_hash> --account version11.0
 ```
 
 The `<class_hash>` is the class hash taken from the output of declare command.
-
-## Class Hash
-
-### Broadcast
-Class Hash: `0x45971ddf5228a8977d069efed7752c2a42682ce718b3f491abd363e92dd53ea`
-
-Contract: `0x06c764c0404108a7ad63a24ef6aa3efe0f1e772a50887fe9d01d222efd73bc44`
-
-### Splitter
-Class Hash: `0x3dfd8297fdda6915d612488b1dd6ef2abe8b4b30a2c2e208ce77ac68d143221`
-
-Contract: `0x004dd1cb276858514dd823d3a4e3b1d74f7275a630addf79a3a5da0561777097`
 
 ## Disclaimer
 
