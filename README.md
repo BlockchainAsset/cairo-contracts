@@ -22,6 +22,16 @@ Class Hash: [`0x3dfd8297fdda6915d612488b1dd6ef2abe8b4b30a2c2e208ce77ac68d143221`
 
 Contract: [`0x004dd1cb276858514dd823d3a4e3b1d74f7275a630addf79a3a5da0561777097`](https://goerli.voyager.online/contract/0x004dd1cb276858514dd823d3a4e3b1d74f7275a630addf79a3a5da0561777097)
 
+### Get Pedersen
+
+A simple cairo contract to get the pedersen hash of a `felt` value and a contract address.
+
+Code: [get_pedersen.cairo](./src/get_pedersen.cairo)
+
+Class Hash: [`0x7e0216cf4a0b1bb739cd7229ff0ae4f1fdc918b76acb4abab3477ecfde3f036`](https://goerli.voyager.online/class/0x7e0216cf4a0b1bb739cd7229ff0ae4f1fdc918b76acb4abab3477ecfde3f036)
+
+Contract: [`0x053487b54e42d7e42a31b9135d12cd49b7a0f6b97043b635dac1fb2e7f5d5679`](https://goerli.voyager.online/contract/0x053487b54e42d7e42a31b9135d12cd49b7a0f6b97043b635dac1fb2e7f5d5679)
+
 ## Requirements
 
 The contract should be compiled with latest version of CAIRO which can be found [here](https://github.com/starkware-libs/cairo/releases).
