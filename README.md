@@ -26,7 +26,7 @@ Contract: [`0x004dd1cb276858514dd823d3a4e3b1d74f7275a630addf79a3a5da0561777097`]
 
 A simple cairo contract to get the pedersen hash of a `felt` value and a contract address.
 
-Code: [get_pedersen.cairo](./src/get_pedersen.cairo)
+Code: [`get_pedersen.cairo`](./src/get_pedersen.cairo)
 
 Class Hash: [`0x7e0216cf4a0b1bb739cd7229ff0ae4f1fdc918b76acb4abab3477ecfde3f036`](https://goerli.voyager.online/class/0x7e0216cf4a0b1bb739cd7229ff0ae4f1fdc918b76acb4abab3477ecfde3f036)
 
@@ -36,11 +36,17 @@ Contract: [`0x053487b54e42d7e42a31b9135d12cd49b7a0f6b97043b635dac1fb2e7f5d5679`]
 
 The contract should be compiled with latest version of CAIRO which can be found [here](https://github.com/starkware-libs/cairo/releases).
 
-### Installing
+### Installing & Creating Account
 
 Please follow this video: https://www.youtube.com/watch?v=NdP2jTQ34hY
 
 Or the repo: https://github.com/starknet-edu/deploy-cairo1-demo
+
+#### Old Account
+
+If you already have an account, then you can simply add the `private_key`, `address` and mark `deployed` to be `true` in `./starknet_accounts/starknet_open_zeppelin_accounts.json` or in similarly named files in that folder.
+
+NOTE: Using an old account, might lead to `StarknetErrorCode.ENTRY_POINT_NOT_FOUND_IN_CONTRACT` error. In those cases, creating a fresh account, and transferring some ETH from old account to the new one is advised.
 
 ## Testing
 
@@ -69,20 +75,6 @@ If you didn't specified CAIRO in PATH, you can use the below command within the 
 ```
 cargo run --bin starknet-compile -- ./src/FILENAME.cairo ./compiled/FILENAME.json --replace-ids
 ```
-
-### Account or Wallet
-
-An account or wallet is required to create contracts.
-
-#### New Account
-
-You can use this repo: https://github.com/starknet-edu/deploy-cairo1-demo to know more about how to create a new account.
-
-#### Old Account
-
-If you already have an account, then you can simply add the `private_key`, `address` and mark `deployed` to be `true` in `./starknet_accounts/starknet_open_zeppelin_accounts.json` or in similarly named files in that folder.
-
-NOTE: Using an old account, might lead to `StarknetErrorCode.ENTRY_POINT_NOT_FOUND_IN_CONTRACT` error. In those cases, creating a fresh account, and transferring some ETH from old account to the new one is advised.
 
 ### Contract Declaration
 
