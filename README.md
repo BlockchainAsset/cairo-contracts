@@ -38,61 +38,9 @@ The contract should be compiled with latest version of CAIRO which can be found 
 
 ### Installing
 
-#### `cairo` installation
+Please follow this video: https://www.youtube.com/watch?v=NdP2jTQ34hY
 
-If you're installing Cairo for the first time:
-
-```
-git clone https://github.com/starkware-libs/cairo/
-cd cairo
-git checkout 9c19056
-cargo build --all --release
-```
-
-NOTE: `9c19056` is one of the latest release commit. You can change it if a new [release](https://github.com/starkware-libs/cairo/releases) comes up.
-
-If you already have Cairo installed:
-
-```
-cd cairo
-git fetch && git pull
-git checkout 9c19056
-cargo build --all --release
-```
-
-At this point you have Cairo installed in this repository.
-
-NOTE: Sometimes you may have to clearn the cargo before building if you already have installed cairo before.
-
-Adding path to your shell makes it easy to run the tests.
-
-```
-export PATH="$PATH:/path/to/cairo/target/release"
-```
-
-#### `cairo-lang` installation
-
-After setting up a virtual environment, you can use the below to install `cairo-lang`. If you already had installed `cairo-lang`, you might need to uninstall it.
-
-```
-pip3 uninstall cairo-lang
-```
-
-Then to install, download the [zip](https://github.com/starkware-libs/cairo-lang/releases) and install using it as below:
-
-```
-pip3 install ecdsa fastecdsa sympy
-pip3 install cairo-lang-0.11.0.2.zip
-```
-
-The zip file can be the latest release of `cairo-lang` [github repo](https://github.com/starkware-libs/cairo-lang/releases).
-
-You can also install `cairo-lang` directly, which at the time of writing this line, will install `0.11.0.2`.
-
-To verify installation:
-```
-starknet --version
-```
+Or the repo: https://github.com/starknet-edu/deploy-cairo1-demo
 
 ## Testing
 
@@ -116,38 +64,19 @@ Then, you can use the below command to compile from CAIRO to Sierra:
 starknet-compile ./src/FILENAME.cairo ./compiled/FILENAME.json --replace-ids
 ```
 
-If you didn't specified CAIRO in PATH, you can use the below command:
+If you didn't specified CAIRO in PATH, you can use the below command within the `cairo` folder:
 
 ```
 cargo run --bin starknet-compile -- ./src/FILENAME.cairo ./compiled/FILENAME.json --replace-ids
 ```
 
-### Account Creation
+### Account or Wallet
 
 An account or wallet is required to create contracts.
 
 #### New Account
 
-You can use the below to create a new account:
-
-```
-starknet new_account --network alpha-goerli --wallet starkware.starknet.wallets.open_zeppelin.OpenZeppelinAccount --account version11.0
-```
-
-`version11.0` is just the name of the account, can be named anything.
-
-If you don't want to type the network and other constant parameter multiple times, you can set those as below:
-
-```
-export STARKNET_NETWORK=alpha-goerli
-export STARKNET_WALLET=starkware.starknet.wallets.open_zeppelin.OpenZeppelinAccount
-```
-
-This will provide you with a new account address and a public key. Fund the address with some ETH for transactions. Once the transaction status is `pending`, you can initiate the deployment of the account.
-
-```
-starknet deploy_account --account version11.0
-```
+You can use this repo: https://github.com/starknet-edu/deploy-cairo1-demo to know more about how to create a new account.
 
 #### Old Account
 
@@ -195,3 +124,5 @@ https://github.com/starknet-edu/deploy-cairo1-demo
 https://github.com/Kalzak/RockPaperScissors-Cairo
 
 https://github.com/shramee/starklings-cairo1
+
+https://www.youtube.com/watch?v=NdP2jTQ34hY
